@@ -1,0 +1,23 @@
+def evaluar_persona(nombre, apellido, edad, sexo):
+    # Evaluar la edad
+    if edad >= 18:
+        print(f"{nombre} {apellido} es mayor de edad.")
+    else:
+        print(f"{nombre} {apellido} es menor de edad.")
+
+    # Evaluar el sexo
+    if sexo.lower() == "masculino":
+        print(f"{nombre} es un Hombre.")
+    elif sexo.lower() == "femenino":
+        print(f"{nombre} es una Mujer.")
+    else:
+        print("Sexo no reconocido.")
+
+# Solicitar los datos al usuario
+nombre = input("Ingrese el nombre: ")
+apellido = input("Ingrese el apellido: ")
+edad = int(input("Ingrese la edad: "))
+sexo = input("Ingrese el sexo (Masculino/Femenino): ")
+
+# Llamar a la función para evaluar la persona
+evaluar_persona(nombre, apellido, edad, sexo)
